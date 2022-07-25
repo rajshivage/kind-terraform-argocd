@@ -14,3 +14,9 @@ spec:
     path: templates/external-dns
     repoURL: https://github.com/rajshivage/kind-terraform-argocd.git
     targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
