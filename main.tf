@@ -61,4 +61,6 @@ resource "helm_release" "argocd" {
   values = [
     file("argocd/application.yaml")
   ]
+
+  depends_on = [kind_cluster.default]
 }

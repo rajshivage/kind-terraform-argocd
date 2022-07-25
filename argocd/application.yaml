@@ -1,6 +1,6 @@
 server:
   additionalApplications:
-   - name: cluster-config
+   - name: root-app
      namespace: argocd
      project: default
      source:
