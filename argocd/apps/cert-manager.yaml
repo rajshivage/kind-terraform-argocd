@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: external-dns
+  name: cert-manager
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: templates/external-dns
+    path: templates/cert-manager
     repoURL: https://github.com/rajshivage/kind-terraform-argocd.git
     targetRevision: HEAD
