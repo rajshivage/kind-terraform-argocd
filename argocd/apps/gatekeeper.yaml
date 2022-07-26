@@ -14,8 +14,8 @@ spec:
     repoURL: https://github.com/rajshivage/kind-terraform-argocd.git
     targetRevision: HEAD
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    # automated:
+    #   prune: false
+    #   selfHeal: false
     syncOptions:
     - CreateNamespace=true
